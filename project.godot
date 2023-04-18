@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Cangaco 3D"
+config/name="projeto-cangaco"
 run/main_scene="res://node_3d.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
@@ -21,7 +21,7 @@ project/assembly_name="Cangaco 3D"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=3
 anti_aliasing/quality/msaa_2d=3
 anti_aliasing/quality/msaa_3d=3
 anti_aliasing/quality/use_taa=true
-textures/canvas_textures/default_texture_filter=3
