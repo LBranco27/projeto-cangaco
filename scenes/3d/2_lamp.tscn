@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c17qsyelyentd"]
+
+[ext_resource type="PackedScene" uid="uid://xhlb7r4tocdo" path="res://assets/2 Lamp.glb" id="1_688hd"]
+
+[node name="2 Lamp" instance=ExtResource("1_688hd")]
