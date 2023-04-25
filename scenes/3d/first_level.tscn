@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqx8g85u1qe77"]
+[gd_scene load_steps=16 format=3 uid="uid://bqx8g85u1qe77"]
 
 [ext_resource type="Script" path="res://assets/Player.gd" id="2_5fyay"]
 [ext_resource type="PackedScene" uid="uid://c17qsyelyentd" path="res://scenes/3d/2_lamp.tscn" id="2_hf6dl"]
+[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="3_x5f0e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
 size = Vector3(1.178, 3.563, 3.377)
@@ -32,6 +33,20 @@ sdfgi_read_sky_light = false
 sdfgi_energy = 0.36
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ne25"]
+transparency = 1
+albedo_texture = ExtResource("3_x5f0e")
+
+[sub_resource type="QuadMesh" id="QuadMesh_5bf8j"]
+material = SubResource("StandardMaterial3D_5ne25")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sofqh"]
+size = Vector3(8.06172, 9.72683, 2.06065)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pgygl"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8hsoe"]
+
 [node name="first_level" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -39,11 +54,15 @@ transform = Transform3D(0.784776, -0.276544, 0.554662, 0, 0.894934, 0.446198, -0
 shadow_enabled = true
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.859852, -0.349491, 0.37217, 0, 0.728969, 0.684547, -0.510543, -0.588609, 0.626805, 8.35447, 22.0006, 16.2501)
+transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 32, 44.191, 32)
+projection = 1
+fov = 1.0
+size = 50.0
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0358759, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0609, 0.0358759, 0)
 script = ExtResource("2_5fyay")
+speed = 20
 
 [node name="lamp" parent="CharacterBody3D" instance=ExtResource("2_hf6dl")]
 
@@ -55,13 +74,40 @@ shape = SubResource("BoxShape3D_wdss6")
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0.0454533, -0.0139345, -0.016157)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, 0)
 material_override = SubResource("StandardMaterial3D_jbeql")
 mesh = SubResource("PlaneMesh_r3unc")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0116531, -0.00253937, 0.0414076)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.003, 0, 0)
 shape = SubResource("BoxShape3D_o46y5")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0eug")
+
+[node name="Node3D" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1003, 0, -3.70709)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+transform = Transform3D(14.1421, -10, 10, 0, 14.1421, 14.1421, -14.1421, -10, 10, 13.4513, 5, -3.70709)
+mesh = SubResource("QuadMesh_5bf8j")
+skeleton = NodePath("../../Node3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1.37489, 0, 1.45248, 0, 2, 0, -1.45248, 0, 1.37489, 15.016, 5.34033, -2.33357)
+shape = SubResource("BoxShape3D_sofqh")
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.24298, 14.2271, 9.30943)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+shape = SubResource("BoxShape3D_pgygl")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+mesh = SubResource("BoxMesh_8hsoe")

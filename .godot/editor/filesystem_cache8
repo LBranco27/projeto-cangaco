@@ -1,0 +1,43 @@
+2a60927148abd1d33b818b535e306557
+::res://::1682436113
+export_presets.cfg::TextFile::-1::1682007784::0::1::::<><>::
+icon.svg::CompressedTexture2D::8180678694685553108::1682007784::1682276417::1::::<><>::
+node_3d.tscn::PackedScene::1549909442973593075::1682276793::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
+png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png::CompressedTexture2D::255746419974642344::1682435858::1682435871::1::::<><>::
+start.tscn::PackedScene::1549909442973593075::1682276793::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
+Super-City-Allegheny-County-Courthouse-Playkot.png::CompressedTexture2D::7950478350655422972::1682275869::1682275893::1::::<><>::
+::res://assets/::1682435515
+00 Maria.glb::PackedScene::6258816243820983984::1682007784::1682007871::1::::<><>::uid://m5xfqylapmcm<>uid://deokp6sfxeaw0<>uid://cixr5sd6m88gg<>uid://vf4o06s1ms2o<>uid://chdxammvpetyc<>uid://lj8vn0cpter5<>uid://dvlmrixxse112<>uid://cpsa2kpq07l6l
+00 Maria_Image_0.png::CompressedTexture2D::5382919519008598206::1682007784::1682007869::1::::<><>::
+00 Maria_Image_1.png::CompressedTexture2D::905603754030636504::1682007784::1682007869::1::::<><>::
+00 Maria_Image_2.png::CompressedTexture2D::7469554327312912437::1682007784::1682007869::1::::<><>::
+00 Maria_Image_3.png::CompressedTexture2D::792698563773520504::1682007784::1682007869::1::::<><>::
+00 Maria_Image_4.png::CompressedTexture2D::1486074760899641196::1682007784::1682007869::1::::<><>::
+00 Maria_Image_5.png::CompressedTexture2D::5271753546740460462::1682007784::1682007869::1::::<><>::
+00 Maria_Image_6.png::CompressedTexture2D::8656695341968781271::1682007784::1682007868::1::::<><>::
+00 Maria_Image_7.png::CompressedTexture2D::5862881587132410405::1682007784::1682007868::1::::<><>::
+2 Lamp.glb::PackedScene::1629465429019949308::1682007784::1682007870::1::::<><>::uid://5fcr2rvqyvor<>uid://dpnt8cstndetw<>uid://2lo866x057qv<>uid://dxv6x52pwcim3<>uid://cl27qcyhiivlt<>uid://b3g53h6q5ix2y<>uid://d4abvyi65c38g<>uid://b3gvg533krxsj<>uid://hss35ihi1xog<>uid://bwh88gg7sm02a<>uid://couveebdfi3k3<>uid://ntah7jsy5njn
+2 Lamp_Image_0.png::CompressedTexture2D::1918717579811555157::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_1 edit.png::CompressedTexture2D::2116140435761808865::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_1.png::CompressedTexture2D::9194838009614550696::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_2.png::CompressedTexture2D::8240144304247938804::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_3.png::CompressedTexture2D::4365966500414484202::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_4.png::CompressedTexture2D::8818882305746118884::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_5.png::CompressedTexture2D::5602628505686261501::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_6.png::CompressedTexture2D::3947088805855803258::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_7.png::CompressedTexture2D::4365381963935170161::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_8.png::CompressedTexture2D::529625201527163374::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_9.png::CompressedTexture2D::5798055145205106448::1682007784::1682007868::1::::<><>::
+2 Lamp_Image_10.png::CompressedTexture2D::951692340680439523::1682007784::1682007868::1::::<><>::
+new_array_mesh.tres::ArrayMesh::6276383683446785718::1682007784::0::1::::<><>::
+new_mesh_library.tres::MeshLibrary::9149425630869243961::1682007784::0::1::::<><>::
+new_plane_mesh.tres::PlaneMesh::7551560925563886094::1682007784::0::1::::<><>::uid://dis13fyruqfy4
+new_standard_material_3d.tres::StandardMaterial3D::3479928003078626810::1682007784::0::1::::<><>::
+Player.gd::GDScript::-1::1682435515::0::1::::<>CharacterBody3D<>::
+Sand4_N.jpg::CompressedTexture2D::3375806729599039710::1682007784::1682007869::1::::<><>::
+Sand4_S.jpg::CompressedTexture2D::7759560544289724481::1682007784::1682007869::1::::<><>::
+::res://scenes/::1682007784
+::res://scenes/3d/::1682436095
+00_maria.tscn::PackedScene::7822409605716805709::1682276793::0::1::::<><>::uid://cvf213hh0rsya
+2_lamp.tscn::PackedScene::6664816273551164221::1682007784::0::1::::<><>::uid://xhlb7r4tocdo
+first_level.tscn::PackedScene::3558939026328491792::1682436095::0::1::::<><>::res://assets/Player.gd<>uid://c17qsyelyentd<>uid://dv5duy8oe7pk
