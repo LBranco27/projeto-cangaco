@@ -42,7 +42,7 @@ albedo_texture = ExtResource("3_x5f0e")
 material = SubResource("StandardMaterial3D_5ne25")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sofqh"]
-size = Vector3(8.06172, 9.72683, 2.06065)
+size = Vector3(8.99762, 9.72683, 5.44118)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgygl"]
 
@@ -101,7 +101,7 @@ mesh = SubResource("QuadMesh_5bf8j")
 skeleton = NodePath("../../Node3D")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 8.90508)
+transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 6.38335)
 shape = SubResource("BoxShape3D_sofqh")
 
 [node name="RigidBody3D2" type="RigidBody3D" parent="."]

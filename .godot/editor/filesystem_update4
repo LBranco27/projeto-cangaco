@@ -1,2 +1,5 @@
 res://scenes/3d/first_level.tscn
-res://assets/Player.gd
+res://start.tscn
+res://scenes/3d/2_lamp.tscn
+res://scenes/3d/00_maria.tscn
+res://CanvasLayer.gd

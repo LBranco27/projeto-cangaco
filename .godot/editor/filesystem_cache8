@@ -1,12 +1,13 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682436113
-export_presets.cfg::TextFile::-1::1682007784::0::1::::<><>::
-icon.svg::CompressedTexture2D::8180678694685553108::1682007784::1682276417::1::::<><>::
+::res://::1683168885
+CanvasLayer.gd::GDScript::-1::1683168858::0::1::::<>CanvasLayer<>::
+export_presets.cfg::TextFile::-1::1683168858::0::1::::<><>::
+icon.svg::CompressedTexture2D::8180678694685553108::1683168858::1682276417::1::::<><>::
 node_3d.tscn::PackedScene::1549909442973593075::1682276793::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
 png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png::CompressedTexture2D::255746419974642344::1682435858::1682435871::1::::<><>::
-start.tscn::PackedScene::1549909442973593075::1682276793::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
+start.tscn::PackedScene::1549909442973593075::1683168858::0::1::::<><>::res://CanvasLayer.gd<>uid://d5ujs52ibl4f
 Super-City-Allegheny-County-Courthouse-Playkot.png::CompressedTexture2D::7950478350655422972::1682275869::1682275893::1::::<><>::
-::res://assets/::1682435515
+::res://assets/::1683168858
 00 Maria.glb::PackedScene::6258816243820983984::1682007784::1682007871::1::::<><>::uid://m5xfqylapmcm<>uid://deokp6sfxeaw0<>uid://cixr5sd6m88gg<>uid://vf4o06s1ms2o<>uid://chdxammvpetyc<>uid://lj8vn0cpter5<>uid://dvlmrixxse112<>uid://cpsa2kpq07l6l
 00 Maria_Image_0.png::CompressedTexture2D::5382919519008598206::1682007784::1682007869::1::::<><>::
 00 Maria_Image_1.png::CompressedTexture2D::905603754030636504::1682007784::1682007869::1::::<><>::
@@ -29,15 +30,17 @@ Super-City-Allegheny-County-Courthouse-Playkot.png::CompressedTexture2D::7950478
 2 Lamp_Image_8.png::CompressedTexture2D::529625201527163374::1682007784::1682007868::1::::<><>::
 2 Lamp_Image_9.png::CompressedTexture2D::5798055145205106448::1682007784::1682007868::1::::<><>::
 2 Lamp_Image_10.png::CompressedTexture2D::951692340680439523::1682007784::1682007868::1::::<><>::
-new_array_mesh.tres::ArrayMesh::6276383683446785718::1682007784::0::1::::<><>::
-new_mesh_library.tres::MeshLibrary::9149425630869243961::1682007784::0::1::::<><>::
-new_plane_mesh.tres::PlaneMesh::7551560925563886094::1682007784::0::1::::<><>::uid://dis13fyruqfy4
-new_standard_material_3d.tres::StandardMaterial3D::3479928003078626810::1682007784::0::1::::<><>::
+mato.png::CompressedTexture2D::273729268538298995::1683168858::1683168886::1::::<><>::
+new_array_mesh.tres::ArrayMesh::6276383683446785718::1683168858::0::1::::<><>::
+new_mesh_library.tres::MeshLibrary::9149425630869243961::1683168858::0::1::::<><>::
+new_plane_mesh.tres::PlaneMesh::7551560925563886094::1683168858::0::1::::<><>::uid://dis13fyruqfy4
+new_standard_material_3d.tres::StandardMaterial3D::3479928003078626810::1683168858::0::1::::<><>::
 Player.gd::GDScript::-1::1682435515::0::1::::<>CharacterBody3D<>::
 Sand4_N.jpg::CompressedTexture2D::3375806729599039710::1682007784::1682007869::1::::<><>::
 Sand4_S.jpg::CompressedTexture2D::7759560544289724481::1682007784::1682007869::1::::<><>::
 ::res://scenes/::1682007784
-::res://scenes/3d/::1682436095
+::res://scenes/3d/::1683168858
 00_maria.tscn::PackedScene::7822409605716805709::1682276793::0::1::::<><>::uid://cvf213hh0rsya
-2_lamp.tscn::PackedScene::6664816273551164221::1682007784::0::1::::<><>::uid://xhlb7r4tocdo
-first_level.tscn::PackedScene::3558939026328491792::1682436095::0::1::::<><>::res://assets/Player.gd<>uid://c17qsyelyentd<>uid://dv5duy8oe7pk
+2_lamp.tscn::PackedScene::6664816273551164221::1683168858::0::1::::<><>::uid://xhlb7r4tocdo
+Camera3D.gd::GDScript::-1::1683168858::0::1::::<>Camera3D<>::
+first_level.tscn::PackedScene::3558939026328491792::1683168858::0::1::::<><>::res://scenes/3d/Camera3D.gd<>res://assets/Player.gd<>uid://c17qsyelyentd<>uid://dv5duy8oe7pk
