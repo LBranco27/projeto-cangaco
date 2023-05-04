@@ -1,8 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://djph7cq7jly1r"]
+[gd_scene format=3 uid="uid://djph7cq7jly1r"]
 
-[ext_resource type="PackedScene" uid="uid://cvf213hh0rsya" path="res://assets/00 Maria.glb" id="1_gn88i"]
-
-[node name="00 Maria" instance=ExtResource("1_gn88i")]
+[node name="00 Maria"]
 
 [node name="Skeleton3D" parent="metarig001" index="0"]
 bones/2/position = Vector3(0.0165245, 10.5705, 17.171)

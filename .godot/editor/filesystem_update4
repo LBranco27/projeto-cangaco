@@ -3,3 +3,6 @@ res://start.tscn
 res://scenes/3d/2_lamp.tscn
 res://scenes/3d/00_maria.tscn
 res://CanvasLayer.gd
+res://scenes/3d/start.tscn
+res://scenes/3d/node_3d.tscn
+res://assets/new_plane_mesh.tres

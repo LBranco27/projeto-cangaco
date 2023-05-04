@@ -1,9 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://bqx8g85u1qe77"]
+[gd_scene load_steps=17 format=3 uid="uid://uxwaj14hh64l"]
 
-[ext_resource type="Script" path="res://scenes/3d/Camera3D.gd" id="1_nbjfj"]
-[ext_resource type="Script" path="res://assets/Player.gd" id="2_5fyay"]
-[ext_resource type="PackedScene" uid="uid://c17qsyelyentd" path="res://scenes/3d/2_lamp.tscn" id="2_hf6dl"]
-[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="3_x5f0e"]
+[ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="1_03a6o"]
+[ext_resource type="PackedScene" path="res://scenes/3d/2_lamp.tscn" id="2_hf6dl"]
+[ext_resource type="Script" path="res://assets/Scripts/Player.gd" id="2_te6im"]
+[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="4_dfb0n"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
 size = Vector3(1.178, 3.563, 3.377)
@@ -36,7 +36,7 @@ glow_enabled = true
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ne25"]
 transparency = 1
-albedo_texture = ExtResource("3_x5f0e")
+albedo_texture = ExtResource("4_dfb0n")
 
 [sub_resource type="QuadMesh" id="QuadMesh_5bf8j"]
 material = SubResource("StandardMaterial3D_5ne25")
@@ -59,11 +59,11 @@ transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 
 projection = 1
 fov = 1.0
 size = 50.0
-script = ExtResource("1_nbjfj")
+script = ExtResource("1_03a6o")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0609, 0.0358759, 0)
-script = ExtResource("2_5fyay")
+script = ExtResource("2_te6im")
 speed = 20
 
 [node name="lamp" parent="CharacterBody3D" instance=ExtResource("2_hf6dl")]
