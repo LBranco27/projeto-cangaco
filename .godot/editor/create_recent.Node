@@ -1,3 +1,6 @@
+Timer
+Label
+RichTextLabel
 MeshInstance3D
 CollisionShape3D
 RigidBody3D

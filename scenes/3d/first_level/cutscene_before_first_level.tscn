@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://dei1mx6k7scob"]
+
+[ext_resource type="Script" path="res://assets/Scripts/cutscene_before_first_level.gd" id="1_6ergs"]
+
+[sub_resource type="Gradient" id="Gradient_tseim"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_k7nse"]
+gradient = SubResource("Gradient_tseim")
+fill_to = Vector2(0, 0)
+
+[node name="cutscene_before_first_level" type="Node2D"]
+script = ExtResource("1_6ergs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_k7nse")
+expand_mode = 1
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/CenterContainer"]
+layout_mode = 2
+text = "Lampião e sua família sempre foram trabalhadores, enquanto jovem sempre ajudava em afazeres cotidianos e agrícolas."
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.59
+one_shot = true
+autostart = true

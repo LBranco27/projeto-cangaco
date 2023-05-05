@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3]
+[gd_scene load_steps=8 format=3 uid="uid://dykx5a2oii0u0"]
 
 [ext_resource type="PackedScene" uid="uid://cvf213hh0rsya" path="res://assets/Characters/00 Maria.glb" id="1_cyi4p"]
 [ext_resource type="PackedScene" uid="uid://xhlb7r4tocdo" path="res://assets/Characters/2 Lamp.glb" id="2_3ps4k"]
