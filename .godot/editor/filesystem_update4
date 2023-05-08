@@ -6,3 +6,8 @@ res://assets/Scripts/FadeScene.gd
 res://assets/Scripts/start_CanvasLayer.gd
 res://assets/Scripts/cutscene_before_first_level.gd
 res://assets/Scripts/first_level.gd
+res://assets/new_mesh_library.tres
+res://assets/new_box_mesh.tres
+res://scenes/3d/first_level/caixa.tres
+res://scenes/3d/first_level/first_level.meshlib
+res://scenes/3d/first_level/new_box_mesh.tres

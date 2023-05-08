@@ -1,11 +1,13 @@
-[gd_scene load_steps=19 format=3 uid="uid://uxwaj14hh64l"]
+[gd_scene load_steps=20 format=3 uid="uid://uxwaj14hh64l"]
 
 [ext_resource type="Script" path="res://assets/Scripts/first_level.gd" id="1_b8xbs"]
 [ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="1_olkib"]
 [ext_resource type="Script" path="res://assets/Scripts/Player.gd" id="2_v4r51"]
 [ext_resource type="PackedScene" path="res://scenes/3d/2_lamp.tscn" id="3_ok5pv"]
 [ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="4_ems7w"]
+[ext_resource type="MeshLibrary" uid="uid://vvcfquix0uy7" path="res://scenes/3d/first_level/first_level.meshlib" id="5_aiwn2"]
 [ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="5_cpda3"]
+[ext_resource type="BoxMesh" uid="uid://d308vu7v7li3v" path="res://assets/new_box_mesh.tres" id="5_lnodp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
 size = Vector3(1.178, 3.563, 3.377)
@@ -48,8 +50,6 @@ size = Vector3(8.99762, 9.72683, 5.44118)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pgygl"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_8hsoe"]
-
 [node name="first_level" type="Node3D"]
 script = ExtResource("1_b8xbs")
 
@@ -89,11 +89,17 @@ skeleton = NodePath("../..")
 transform = Transform3D(0.176863, 0, -0.17669, 0, 0.25, 0, 0.17669, 0, 0.176863, 0.00307649, -1.1205e-09, 0.00192119)
 shape = SubResource("BoxShape3D_o46y5")
 
+[node name="GridMap" type="GridMap" parent="Ground"]
+mesh_library = ExtResource("5_aiwn2")
+cell_size = Vector3(0.05, 1, 0.05)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(65530, 65535, 1310720, 65530, 0, 1310720, 65531, 0, 1310720, 65531, 65535, 1310720, 65533, 65533, 1310720, 65535, 65532, 1310720, 65533, 2, 1310720)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0eug")
-
-[node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.1003, 0, -3.70709)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
@@ -101,7 +107,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
 transform = Transform3D(19.9999, -0.00691147, 0.00691146, 1.67489e-09, 14.1421, 14.1421, -0.00977428, -14.1421, 14.1421, 12.2335, 5, 6.82751)
 mesh = SubResource("QuadMesh_5bf8j")
-skeleton = NodePath("../../Node3D")
+skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
 transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 6.38335)
@@ -115,8 +121,8 @@ transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.4
 shape = SubResource("BoxShape3D_pgygl")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
-transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.49605, 0, -6.18549)
-mesh = SubResource("BoxMesh_8hsoe")
+transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
+mesh = ExtResource("5_lnodp")
 
 [node name="FadeScene" parent="." instance=ExtResource("5_cpda3")]
 visible = false
