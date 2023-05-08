@@ -1,9 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://uxwaj14hh64l"]
+[gd_scene load_steps=19 format=3 uid="uid://uxwaj14hh64l"]
 
+[ext_resource type="Script" path="res://assets/Scripts/first_level.gd" id="1_b8xbs"]
 [ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="1_olkib"]
 [ext_resource type="Script" path="res://assets/Scripts/Player.gd" id="2_v4r51"]
 [ext_resource type="PackedScene" path="res://scenes/3d/2_lamp.tscn" id="3_ok5pv"]
 [ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="4_ems7w"]
+[ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="5_cpda3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
 size = Vector3(1.178, 3.563, 3.377)
@@ -49,6 +51,7 @@ size = Vector3(8.99762, 9.72683, 5.44118)
 [sub_resource type="BoxMesh" id="BoxMesh_8hsoe"]
 
 [node name="first_level" type="Node3D"]
+script = ExtResource("1_b8xbs")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.993228, 0.0518415, -0.103978, 3.53156e-09, 0.894934, 0.446198, 0.116185, -0.443176, 0.888873, 0.140867, -0.0139346, -0.0360665)
@@ -114,3 +117,6 @@ shape = SubResource("BoxShape3D_pgygl")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
 transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.49605, 0, -6.18549)
 mesh = SubResource("BoxMesh_8hsoe")
+
+[node name="FadeScene" parent="." instance=ExtResource("5_cpda3")]
+visible = false

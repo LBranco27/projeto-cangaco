@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dei1mx6k7scob"]
+[gd_scene load_steps=5 format=3 uid="uid://dei1mx6k7scob"]
 
 [ext_resource type="Script" path="res://assets/Scripts/cutscene_before_first_level.gd" id="1_6ergs"]
+[ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="2_4ryc7"]
 
 [sub_resource type="Gradient" id="Gradient_tseim"]
 
@@ -46,3 +47,8 @@ text = "Lampião e sua família sempre foram trabalhadores, enquanto jovem sempr
 wait_time = 2.59
 one_shot = true
 autostart = true
+
+[node name="FadeScene" parent="." instance=ExtResource("2_4ryc7")]
+visible = false
+
+[connection signal="transitioned_black" from="FadeScene" to="." method="_on_fade_scene_transitioned_black"]

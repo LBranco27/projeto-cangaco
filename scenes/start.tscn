@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cufpdymklwotg"]
+[gd_scene load_steps=4 format=3 uid="uid://cufpdymklwotg"]
 
 [ext_resource type="Script" path="res://assets/Scripts/start_CanvasLayer.gd" id="1_4orh8"]
 [ext_resource type="Texture2D" uid="uid://d5ujs52ibl4f" path="res://assets/Textures/mato.png" id="2_dq3ab"]
+[ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="3_gmx24"]
 
 [node name="MainMenu" type="Node2D"]
 
@@ -51,5 +52,9 @@ text = "Iniciar"
 layout_mode = 2
 text = "Exit"
 
+[node name="FadeScene" parent="." instance=ExtResource("3_gmx24")]
+visible = false
+
 [connection signal="pressed" from="CanvasLayer/Control/CenterContainer/VBoxContainer/Button_start" to="CanvasLayer" method="_on_button_start_pressed"]
 [connection signal="pressed" from="CanvasLayer/Control/CenterContainer/VBoxContainer/Button_exit" to="CanvasLayer" method="_on_button_exit_pressed"]
+[connection signal="transitioned_black" from="FadeScene" to="CanvasLayer" method="_on_fade_scene_transitioned_black"]

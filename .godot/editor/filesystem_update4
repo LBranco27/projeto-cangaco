@@ -1,3 +1,8 @@
 res://scenes/start.tscn
 res://scenes/3d/first_level/cutscene_before_first_level.tscn
 res://scenes/3d/first_level/first_level.tscn
+res://scenes/utils/FadeScene.tscn
+res://assets/Scripts/FadeScene.gd
+res://assets/Scripts/start_CanvasLayer.gd
+res://assets/Scripts/cutscene_before_first_level.gd
+res://assets/Scripts/first_level.gd
