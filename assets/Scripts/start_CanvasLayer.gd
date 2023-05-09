@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-var simultaneous_scene = preload("res://scenes/3d/first_level/cutscene_before_first_level.tscn").instantiate()
+var simultaneous_scene = preload("res://scenes/main_menu/main_menu.tscn").instantiate()
 var fade_scene
 
 func _ready():
@@ -14,7 +14,7 @@ func _on_button_start_pressed():
 	#get_node("/root/MainMenu").free()
 
 func _on_fade_scene_transitioned_black():
-	get_tree().change_scene_to_file("res://scenes/3d/first_level/cutscene_before_first_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn")
 
 func _on_button_exit_pressed():
 	get_tree().quit()
