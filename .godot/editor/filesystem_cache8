@@ -1,79 +1,79 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683654857
-export_presets.cfg::TextFile::-1::1683654818::0::1::::<><>::
-icon.svg::CompressedTexture2D::8180678694685553108::1683654818::1683654818::1::::<><>::
-::res://assets/::1683654818
-new_array_mesh.tres::ArrayMesh::6276383683446785718::1683654818::0::1::::<><>::
-new_box_mesh.tres::BoxMesh::9178201380127093861::1683654818::0::1::::<><>::
-new_mesh_library.tres::MeshLibrary::9149425630869243961::1683654818::0::1::::<><>::
-new_plane_mesh.tres::PlaneMesh::7551560925563886094::1683654818::0::1::::<><>::uid://dis13fyruqfy4
-new_standard_material_3d.tres::StandardMaterial3D::3479928003078626810::1683654818::0::1::::<><>::
-Sand4_N.jpg::CompressedTexture2D::3375806729599039710::1683654818::1683654818::1::::<><>::
-Sand4_S.jpg::CompressedTexture2D::7759560544289724481::1683654818::1683654818::1::::<><>::
-::res://assets/Characters/::1683654818
-00 Maria.glb::PackedScene::6258816243820983984::1683654818::1683654818::1::::<><>::
-00 Maria_Image_0.png::CompressedTexture2D::5382919519008598206::1683654818::1683654818::1::::<><>::
-00 Maria_Image_1.png::CompressedTexture2D::905603754030636504::1683654818::1683654818::1::::<><>::
-00 Maria_Image_2.png::CompressedTexture2D::7469554327312912437::1683654818::1683654818::1::::<><>::
-00 Maria_Image_3.png::CompressedTexture2D::792698563773520504::1683654818::1683654818::1::::<><>::
-00 Maria_Image_4.png::CompressedTexture2D::1486074760899641196::1683654818::1683654818::1::::<><>::
-00 Maria_Image_5.png::CompressedTexture2D::5271753546740460462::1683654818::1683654818::1::::<><>::
-00 Maria_Image_6.png::CompressedTexture2D::8656695341968781271::1683654818::1683654818::1::::<><>::
-00 Maria_Image_7.png::CompressedTexture2D::5862881587132410405::1683654818::1683654818::1::::<><>::
-2 Lamp.glb::PackedScene::1629465429019949308::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_0.png::CompressedTexture2D::1918717579811555157::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_1 edit.png::CompressedTexture2D::2116140435761808865::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_1.png::CompressedTexture2D::9194838009614550696::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_2.png::CompressedTexture2D::8240144304247938804::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_3.png::CompressedTexture2D::4365966500414484202::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_4.png::CompressedTexture2D::8818882305746118884::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_5.png::CompressedTexture2D::5602628505686261501::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_6.png::CompressedTexture2D::3947088805855803258::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_7.png::CompressedTexture2D::4365381963935170161::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_8.png::CompressedTexture2D::529625201527163374::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_9.png::CompressedTexture2D::5798055145205106448::1683654818::1683654818::1::::<><>::
-2 Lamp_Image_10.png::CompressedTexture2D::951692340680439523::1683654818::1683654818::1::::<><>::
-carinha.fbx::PackedScene::3491744512026509731::1683654818::1683654818::1::::<><>::
-pe de pano.fbx::PackedScene::4005674207922350538::1683654818::1683654818::1::::<><>::
-::res://assets/Scripts/::1683654818
-Camera3D.gd::GDScript::-1::1683654818::0::1::::<>Camera3D<>::
-cutscene_before_first_level.gd::GDScript::-1::1683654818::0::1::::<>Node2D<>::
-FadeScene.gd::GDScript::-1::1683654818::0::1::::<>CanvasLayer<>::
-first_level.gd::GDScript::-1::1683654818::0::1::::<>Node3D<>::
-Player.gd::GDScript::-1::1683654818::0::1::::<>CharacterBody3D<>::
-start_CanvasLayer.gd::GDScript::-1::1683654818::0::1::::<>CanvasLayer<>::
-::res://assets/Textures/::1683654818
-mato.png::CompressedTexture2D::273729268538298995::1683654818::1683654818::1::::<><>::
-png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png::CompressedTexture2D::255746419974642344::1683654818::1683654818::1::::<><>::
-Super-City-Allegheny-County-Courthouse-Playkot.png::CompressedTexture2D::7950478350655422972::1683654818::1683654818::1::::<><>::
-::res://assets/Textures/Cactus/::1683654818
-Cactus_1_1.png::CompressedTexture2D::7965203107973139372::1683654818::1683654818::1::::<><>::
-Cactus_1_2.png::CompressedTexture2D::5146948264426990508::1683654818::1683654818::1::::<><>::
-Cactus_3_coroa_frade.png::CompressedTexture2D::6953963997643977945::1683654818::1683654818::1::::<><>::
-::res://assets/Textures/Floor Itens/::1683654818
-::res://assets/Textures/Floor Itens/No_usability/::1683654818
-Scene_1.png::CompressedTexture2D::6213636197494815223::1683654818::1683654818::1::::<><>::
-::res://assets/Textures/Floor Itens/Utility/::1683654818
-Utility_Scene_1.png::CompressedTexture2D::2869458420238474036::1683654818::1683654818::1::::<><>::
-::res://assets/Textures/Tree/::1683654818
-Tree_1_barriguda.png::CompressedTexture2D::4543588508504425992::1683654818::1683654818::1::::<><>::
-Tree_2.png::CompressedTexture2D::2792116699158645855::1683654818::1683654818::1::::<><>::
-Tree_3.png::CompressedTexture2D::8030957332357019964::1683654818::1683654818::1::::<><>::
-::res://assets/third_party/::1683654818
-::res://scenes/::1683654818
-::res://scenes/cutscene_before_first_level/::1683654818
-cutscene_before_first_level.tscn::PackedScene::7458133775426515189::1683654818::0::1::::<><>::res://assets/Scripts/cutscene_before_first_level.gd<>uid://ba81hcv04dygg
-::res://scenes/first_level/::1683654818
-first_level.meshlib::MeshLibrary::1517448883853909080::1683654818::0::1::::<><>::uid://dcycttfwidgl1
-first_level.tscn::PackedScene::1452593849147244457::1683654818::0::1::::<><>::res://assets/Scripts/first_level.gd<>res://assets/Scripts/Camera3D.gd<>res://assets/Scripts/Player.gd<>res://scenes/objects/2_lamp.tscn<>uid://bp0or0nhx8t68<>uid://bxcm4sr6otmlm<>uid://vvcfquix0uy7<>uid://dv5duy8oe7pk<>uid://d308vu7v7li3v<>uid://ba81hcv04dygg
-new_box_mesh.tres::BoxMesh::7349341175200598592::1683654818::0::1::::<><>::
-::res://scenes/main_menu/::1683654818
-main_menu.tscn::PackedScene::6187857520758352228::1683654818::0::1::::<><>::res://assets/Scripts/start_CanvasLayer.gd<>uid://d5ujs52ibl4f<>uid://ba81hcv04dygg
-::res://scenes/objects/::1683654818
-00_maria.tscn::PackedScene::7822409605716805709::1683654818::0::1::::<><>::
-2_lamp.tscn::PackedScene::-1::1683654818::0::1::::<><>::uid://xhlb7r4tocdo
-carinha.tscn::PackedScene::1333591528773636914::1683654818::0::1::::<><>::uid://bp0or0nhx8t68
-pe_de_pano.tscn::PackedScene::4704483995392858457::1683654818::0::1::::<><>::uid://bxcm4sr6otmlm
-teste.tscn::PackedScene::8865888182940303589::1683654818::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
-::res://scenes/utils/::1683654818
-FadeScene.tscn::PackedScene::2456136430608714234::1683654818::0::1::::<><>::res://assets/Scripts/FadeScene.gd
+::res://::1683674402
+export_presets.cfg::TextFile::-1::1683143760::0::1::::<><>::
+icon.svg::CompressedTexture2D::8180678694685553108::1683143760::1683143760::1::::<><>::
+::res://assets/::1683639044
+new_array_mesh.tres::ArrayMesh::6276383683446785718::1683143760::0::1::::<><>::
+new_box_mesh.tres::BoxMesh::9178201380127093861::1683578811::0::1::::<><>::
+new_mesh_library.tres::MeshLibrary::9149425630869243961::1683578720::0::1::::<><>::
+new_plane_mesh.tres::PlaneMesh::7551560925563886094::1683207760::0::1::::<><>::uid://dis13fyruqfy4
+new_standard_material_3d.tres::StandardMaterial3D::3479928003078626810::1683143760::0::1::::<><>::
+Sand4_N.jpg::CompressedTexture2D::3375806729599039710::1679182598::1679183474::1::::<><>::
+Sand4_S.jpg::CompressedTexture2D::7759560544289724481::1679182621::1679182629::1::::<><>::
+::res://assets/Characters/::1683639082
+00 Maria.glb::PackedScene::6258816243820983984::1683207760::1683207760::1::::<><>::
+00 Maria_Image_0.png::CompressedTexture2D::5382919519008598206::1683207760::1683207760::1::::<><>::
+00 Maria_Image_1.png::CompressedTexture2D::905603754030636504::1683207760::1683207760::1::::<><>::
+00 Maria_Image_2.png::CompressedTexture2D::7469554327312912437::1683207760::1683207760::1::::<><>::
+00 Maria_Image_3.png::CompressedTexture2D::792698563773520504::1683207760::1683207760::1::::<><>::
+00 Maria_Image_4.png::CompressedTexture2D::1486074760899641196::1683207760::1683207760::1::::<><>::
+00 Maria_Image_5.png::CompressedTexture2D::5271753546740460462::1683207760::1683207760::1::::<><>::
+00 Maria_Image_6.png::CompressedTexture2D::8656695341968781271::1683207760::1683207760::1::::<><>::
+00 Maria_Image_7.png::CompressedTexture2D::5862881587132410405::1683207760::1683207760::1::::<><>::
+2 Lamp.glb::PackedScene::1629465429019949308::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_0.png::CompressedTexture2D::1918717579811555157::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_1 edit.png::CompressedTexture2D::2116140435761808865::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_1.png::CompressedTexture2D::9194838009614550696::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_2.png::CompressedTexture2D::8240144304247938804::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_3.png::CompressedTexture2D::4365966500414484202::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_4.png::CompressedTexture2D::8818882305746118884::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_5.png::CompressedTexture2D::5602628505686261501::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_6.png::CompressedTexture2D::3947088805855803258::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_7.png::CompressedTexture2D::4365381963935170161::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_8.png::CompressedTexture2D::529625201527163374::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_9.png::CompressedTexture2D::5798055145205106448::1683207760::1683207760::1::::<><>::
+2 Lamp_Image_10.png::CompressedTexture2D::951692340680439523::1683207760::1683207760::1::::<><>::
+carinha.fbx::PackedScene::3491744512026509731::1683638898::1683639082::1::::<><>::
+pe de pano.fbx::PackedScene::4005674207922350538::1683638911::1683639082::1::::<><>::
+::res://assets/Scripts/::1683674324
+Camera3D.gd::GDScript::-1::1683207760::0::1::::<>Camera3D<>::
+cutscene_before_first_level.gd::GDScript::-1::1683674324::0::1::::<>Node2D<>::
+FadeScene.gd::GDScript::-1::1683575530::0::1::::<>CanvasLayer<>::
+first_level.gd::GDScript::-1::1683575549::0::1::::<>Node3D<>::
+Player.gd::GDScript::-1::1683640242::0::1::::<>CharacterBody3D<>::
+start_CanvasLayer.gd::GDScript::-1::1683674324::0::1::::<>CanvasLayer<>::
+::res://assets/Textures/::1683228070
+mato.png::CompressedTexture2D::273729268538298995::1683207760::1683207760::1::::<><>::
+png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png::CompressedTexture2D::255746419974642344::1683207760::1683207760::1::::<><>::
+Super-City-Allegheny-County-Courthouse-Playkot.png::CompressedTexture2D::7950478350655422972::1683207760::1683207760::1::::<><>::
+::res://assets/Textures/Cactus/::1683228291
+Cactus_1_1.png::CompressedTexture2D::7965203107973139372::1683220677::1683228286::1::::<><>::
+Cactus_1_2.png::CompressedTexture2D::5146948264426990508::1683221347::1683228289::1::::<><>::
+Cactus_3_coroa_frade.png::CompressedTexture2D::6953963997643977945::1682432207::1683228291::1::::<><>::
+::res://assets/Textures/Floor Itens/::1683228070
+::res://assets/Textures/Floor Itens/No_usability/::1683228293
+Scene_1.png::CompressedTexture2D::6213636197494815223::1683221703::1683228293::1::::<><>::
+::res://assets/Textures/Floor Itens/Utility/::1683228300
+Utility_Scene_1.png::CompressedTexture2D::2869458420238474036::1683221617::1683228300::1::::<><>::
+::res://assets/Textures/Tree/::1683228097
+Tree_1_barriguda.png::CompressedTexture2D::4543588508504425992::1683221404::1683228097::1::::<><>::
+Tree_2.png::CompressedTexture2D::2792116699158645855::1683221451::1683228097::1::::<><>::
+Tree_3.png::CompressedTexture2D::8030957332357019964::1683221514::1683228097::1::::<><>::
+::res://assets/third_party/::1683639076
+::res://scenes/::1683639307
+::res://scenes/cutscene_before_first_level/::1683674349
+cutscene_before_first_level.tscn::PackedScene::7458133775426515189::1683674349::0::1::::<><>::uid://ba81hcv04dygg
+::res://scenes/first_level/::1683674349
+first_level.meshlib::MeshLibrary::1517448883853909080::1683639235::0::1::::<><>::uid://dcycttfwidgl1
+first_level.tscn::PackedScene::1452593849147244457::1683674349::0::1::::<><>::res://assets/Scripts/first_level.gd<>res://assets/Scripts/Camera3D.gd<>res://assets/Scripts/Player.gd<>res://scenes/objects/2_lamp.tscn<>uid://bp0or0nhx8t68<>uid://bxcm4sr6otmlm<>uid://vvcfquix0uy7<>uid://dv5duy8oe7pk<>uid://d308vu7v7li3v<>uid://ba81hcv04dygg
+new_box_mesh.tres::BoxMesh::7349341175200598592::1683639125::0::1::::<><>::
+::res://scenes/main_menu/::1683674349
+main_menu.tscn::PackedScene::6187857520758352228::1683674349::0::1::::<><>::uid://d5ujs52ibl4f<>uid://ba81hcv04dygg
+::res://scenes/objects/::1683674350
+00_maria.tscn::PackedScene::7822409605716805709::1683207760::0::1::::<><>::
+2_lamp.tscn::PackedScene::-1::1683207760::0::1::::<><>::uid://xhlb7r4tocdo
+carinha.tscn::PackedScene::1333591528773636914::1683640244::0::1::::<><>::uid://bp0or0nhx8t68
+pe_de_pano.tscn::PackedScene::4704483995392858457::1683674350::0::1::::<><>::uid://bxcm4sr6otmlm
+teste.tscn::PackedScene::8865888182940303589::1683639191::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
+::res://scenes/utils/::1683639191
+FadeScene.tscn::PackedScene::2456136430608714234::1683639191::0::1::::<><>::res://assets/Scripts/FadeScene.gd

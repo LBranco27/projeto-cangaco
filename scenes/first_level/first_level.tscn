@@ -72,14 +72,13 @@ script = ExtResource("3_cnc6k")
 speed = 20
 
 [node name="lamp" parent="CharacterBody3D" instance=ExtResource("5_l03yo")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.2442, 0.680044, -5.18235)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(2.09443, 0, 0.121143, 0, 2.057, 0, -0.382095, 0, 0.66404, 11.1204, 6.07072, -5.23319)
+transform = Transform3D(2.09443, 0, 0.121143, 0, 2.057, 0, -0.382095, 0, 0.66404, 0, 5.399, 0)
 shape = SubResource("BoxShape3D_wdss6")
 
 [node name="lamp" parent="." instance=ExtResource("4_2f57l")]
-transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, -13.0609, 0.0358759, 0)
+transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, -18.6652, 0.0358759, -11.7726)
 
 [node name="pe de pano" parent="." instance=ExtResource("6_w1iun")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50033, 0)
