@@ -1,6 +1,6 @@
 extends Node2D
 
-var simultaneous_scene = preload("res://scenes/3d/first_level/first_level.tscn").instantiate()
+var simultaneous_scene = preload("res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn").instantiate()
 var timer
 var fade_scene
 
@@ -20,4 +20,4 @@ func _process(delta):
 
 
 func _on_fade_scene_transitioned_black():
-	get_tree().change_scene_to_file("res://scenes/3d/first_level/first_level.tscn")
+	get_tree().change_scene_to_file("res://scenes/first_level/first_level.tscn")
