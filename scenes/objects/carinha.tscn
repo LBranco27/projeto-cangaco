@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://taab7voyvwqs"]
+
+[ext_resource type="PackedScene" uid="uid://bp0or0nhx8t68" path="res://assets/Characters/carinha.fbx" id="1_tkxxs"]
+
+[node name="carinha" instance=ExtResource("1_tkxxs")]
+
+[node name="Skeleton3D" parent="RootNode/metarig001" index="0"]
+bones/6/rotation = Quaternion(0.199982, -0.104056, 0.0213644, 0.974024)
+bones/11/rotation = Quaternion(-0.313635, 0.811435, -0.387856, 0.304587)
+bones/12/rotation = Quaternion(0.37432, 0.00790427, -0.0581347, 0.925442)
+bones/16/rotation = Quaternion(0.457103, 0.632202, -0.420604, -0.463109)
+bones/17/rotation = Quaternion(0.433173, -0.00767643, 0.0672751, 0.898764)
+bones/28/rotation = Quaternion(0.923485, 0.000427023, 0.00185759, 0.383629)
+bones/29/rotation = Quaternion(0.169082, 9.62645e-09, 6.03868e-09, 0.985602)
+bones/35/rotation = Quaternion(0.999185, 0.000561985, -0.00358988, 0.0401903)
+bones/36/rotation = Quaternion(0.196723, 9.60274e-09, 7.12413e-09, 0.980459)
+bones/46/rotation = Quaternion(0.5, -0.5, -0.5, 0.5)

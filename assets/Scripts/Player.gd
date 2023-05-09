@@ -15,7 +15,7 @@ func _ready():
 func _physics_process(delta):
 	# We create a local variable to store the input direction.
 	var direction = Vector3.ZERO
-	print (get_node("lamp/AnimationPlayer"))
+	# print (get_node("lamp/AnimationPlayer"))
 	# We check for each move input and update the direction accordingly.
 	if Input.is_action_pressed("move_right"):
 		direction.x += 1
@@ -30,7 +30,8 @@ func _physics_process(delta):
 		
 		
 	if direction != Vector3.ZERO:
-		animation.play("Chouched")
+		# print(animation.get_animation_list())
+		animation.play("metarig001|Walk")
 	else:
 		animation.pause()
 	# Ground Velocity
