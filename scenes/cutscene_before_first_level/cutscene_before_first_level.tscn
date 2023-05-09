@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dei1mx6k7scob"]
+[gd_scene load_steps=5 format=3 uid="uid://c3tkxgoe866e4"]
 
 [ext_resource type="Script" path="res://assets/Scripts/cutscene_before_first_level.gd" id="1_8d81p"]
 [ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="2_rrsts"]

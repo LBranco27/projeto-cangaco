@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1683674402
+::res://::1683676332
 export_presets.cfg::TextFile::-1::1683143760::0::1::::<><>::
 icon.svg::CompressedTexture2D::8180678694685553108::1683143760::1683143760::1::::<><>::
 ::res://assets/::1683639044
@@ -35,13 +35,13 @@ Sand4_S.jpg::CompressedTexture2D::7759560544289724481::1679182621::1679182629::1
 2 Lamp_Image_10.png::CompressedTexture2D::951692340680439523::1683207760::1683207760::1::::<><>::
 carinha.fbx::PackedScene::3491744512026509731::1683638898::1683639082::1::::<><>::
 pe de pano.fbx::PackedScene::4005674207922350538::1683638911::1683639082::1::::<><>::
-::res://assets/Scripts/::1683674324
+::res://assets/Scripts/::1683676322
 Camera3D.gd::GDScript::-1::1683207760::0::1::::<>Camera3D<>::
 cutscene_before_first_level.gd::GDScript::-1::1683674324::0::1::::<>Node2D<>::
 FadeScene.gd::GDScript::-1::1683575530::0::1::::<>CanvasLayer<>::
-first_level.gd::GDScript::-1::1683575549::0::1::::<>Node3D<>::
+first_level.gd::GDScript::-1::1683676322::0::1::::<>Node3D<>::
 Player.gd::GDScript::-1::1683640242::0::1::::<>CharacterBody3D<>::
-start_CanvasLayer.gd::GDScript::-1::1683674324::0::1::::<>CanvasLayer<>::
+start_CanvasLayer.gd::GDScript::-1::1683676265::0::1::::<>CanvasLayer<>::
 ::res://assets/Textures/::1683228070
 mato.png::CompressedTexture2D::273729268538298995::1683207760::1683207760::1::::<><>::
 png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png::CompressedTexture2D::255746419974642344::1683207760::1683207760::1::::<><>::
@@ -61,19 +61,19 @@ Tree_2.png::CompressedTexture2D::2792116699158645855::1683221451::1683228097::1:
 Tree_3.png::CompressedTexture2D::8030957332357019964::1683221514::1683228097::1::::<><>::
 ::res://assets/third_party/::1683639076
 ::res://scenes/::1683639307
-::res://scenes/cutscene_before_first_level/::1683674349
-cutscene_before_first_level.tscn::PackedScene::7458133775426515189::1683674349::0::1::::<><>::uid://ba81hcv04dygg
-::res://scenes/first_level/::1683674349
+::res://scenes/cutscene_before_first_level/::1683676309
+cutscene_before_first_level.tscn::PackedScene::6778000746760179753::1683676309::0::1::::<><>::res://assets/Scripts/cutscene_before_first_level.gd<>uid://ba81hcv04dygg
+::res://scenes/first_level/::1683676309
 first_level.meshlib::MeshLibrary::1517448883853909080::1683639235::0::1::::<><>::uid://dcycttfwidgl1
-first_level.tscn::PackedScene::1452593849147244457::1683674349::0::1::::<><>::res://assets/Scripts/first_level.gd<>res://assets/Scripts/Camera3D.gd<>res://assets/Scripts/Player.gd<>res://scenes/objects/2_lamp.tscn<>uid://bp0or0nhx8t68<>uid://bxcm4sr6otmlm<>uid://vvcfquix0uy7<>uid://dv5duy8oe7pk<>uid://d308vu7v7li3v<>uid://ba81hcv04dygg
+first_level.tscn::PackedScene::1452593849147244457::1683676309::0::1::::<><>::res://assets/Scripts/first_level.gd<>res://assets/Scripts/Camera3D.gd<>res://assets/Scripts/Player.gd<>res://scenes/objects/2_lamp.tscn<>uid://bp0or0nhx8t68<>uid://bxcm4sr6otmlm<>uid://vvcfquix0uy7<>uid://dv5duy8oe7pk<>uid://d308vu7v7li3v<>uid://ba81hcv04dygg
 new_box_mesh.tres::BoxMesh::7349341175200598592::1683639125::0::1::::<><>::
-::res://scenes/main_menu/::1683674349
-main_menu.tscn::PackedScene::6187857520758352228::1683674349::0::1::::<><>::uid://d5ujs52ibl4f<>uid://ba81hcv04dygg
-::res://scenes/objects/::1683674350
+::res://scenes/main_menu/::1683676309
+main_menu.tscn::PackedScene::6187857520758352228::1683676309::0::1::::<><>::res://assets/Scripts/start_CanvasLayer.gd<>uid://d5ujs52ibl4f<>uid://ba81hcv04dygg
+::res://scenes/objects/::1683676309
 00_maria.tscn::PackedScene::7822409605716805709::1683207760::0::1::::<><>::
 2_lamp.tscn::PackedScene::-1::1683207760::0::1::::<><>::uid://xhlb7r4tocdo
 carinha.tscn::PackedScene::1333591528773636914::1683640244::0::1::::<><>::uid://bp0or0nhx8t68
-pe_de_pano.tscn::PackedScene::4704483995392858457::1683674350::0::1::::<><>::uid://bxcm4sr6otmlm
+pe_de_pano.tscn::PackedScene::4704483995392858457::1683676309::0::1::::<><>::uid://bxcm4sr6otmlm
 teste.tscn::PackedScene::8865888182940303589::1683639191::0::1::::<><>::uid://cvf213hh0rsya<>uid://xhlb7r4tocdo
 ::res://scenes/utils/::1683639191
 FadeScene.tscn::PackedScene::2456136430608714234::1683639191::0::1::::<><>::res://assets/Scripts/FadeScene.gd

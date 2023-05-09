@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-var simultaneous_scene = preload("res://scenes/main_menu/main_menu.tscn").instantiate()
 var fade_scene
 
 func _ready():
