@@ -1,1 +1,4 @@
+res://scenes/first_level/first_level.tscn
 res://scenes/main_menu/main_menu.tscn
+res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn
+res://scenes/utils/FadeScene.tscn
