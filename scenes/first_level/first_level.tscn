@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://uxwaj14hh64l"]
+[gd_scene load_steps=24 format=3 uid="uid://uxwaj14hh64l"]
 
 [ext_resource type="Script" path="res://assets/Scripts/first_level.gd" id="1_p01fy"]
 [ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="2_rcrgd"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bxcm4sr6otmlm" path="res://assets/Characters/pe de pano.fbx" id="6_w1iun"]
 [ext_resource type="MeshLibrary" uid="uid://vvcfquix0uy7" path="res://scenes/first_level/first_level.meshlib" id="7_x436q"]
 [ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="8_3shrd"]
+[ext_resource type="Texture2D" uid="uid://bf1r0v0hmqad0" path="res://assets/Textures/Tree/Tree_2.png" id="8_6yyhs"]
 [ext_resource type="BoxMesh" uid="uid://d308vu7v7li3v" path="res://assets/new_box_mesh.tres" id="9_cvp1u"]
 [ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="10_vswnm"]
 
@@ -20,6 +21,10 @@ size = Vector3(1.178, 3.563, 3.377)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o46y5"]
 size = Vector3(1.96372, 0.00504406, 1.94377)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gee53"]
+radius = 0.281946
+height = 8.37027
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1e2o0"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -105,6 +110,50 @@ data = {
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
+[node name="Tree 1" type="StaticBody3D" parent="Ground/GridMap"]
+transform = Transform3D(0.007, 0, 0, 0, 0.014, 0, 0, 0, 0.007, 0.0128604, -0.0249033, -0.164075)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 2" type="StaticBody3D" parent="Ground/GridMap"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.125941, -0.0130127, -0.137903)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 3" type="StaticBody3D" parent="Ground/GridMap"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.102119, -0.0130127, -0.122773)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57218)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 4" type="StaticBody3D" parent="Ground/GridMap"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.0438595, 0.0115521, -0.11575)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0eug")
 
@@ -121,7 +170,7 @@ transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 
 shape = SubResource("BoxShape3D_sofqh")
 
 [node name="RigidBody3D2" type="RigidBody3D" parent="."]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 1.24298, 14.2271, 9.30943)
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 13.4698, 15.2548, -22.7067)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
 transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.49605, 0, -6.18549)
