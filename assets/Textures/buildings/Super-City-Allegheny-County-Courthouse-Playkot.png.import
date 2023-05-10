@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bodjbqovutsp7"
-path.s3tc="res://.godot/imported/Sand4_N.jpg-dedba6a6c56672f9c7aee3b2d9e1ad00.s3tc.ctex"
+uid="uid://dljjhmxkkota7"
+path.s3tc="res://.godot/imported/Super-City-Allegheny-County-Courthouse-Playkot.png-449be2c1782a96a6d61f59aea2f46454.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Sand4_N.jpg"
-dest_files=["res://.godot/imported/Sand4_N.jpg-dedba6a6c56672f9c7aee3b2d9e1ad00.s3tc.ctex"]
+source_file="res://assets/Textures/buildings/Super-City-Allegheny-County-Courthouse-Playkot.png"
+dest_files=["res://.godot/imported/Super-City-Allegheny-County-Courthouse-Playkot.png-449be2c1782a96a6d61f59aea2f46454.s3tc.ctex"]
 
 [params]
 

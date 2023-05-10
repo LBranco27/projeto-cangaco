@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv5duy8oe7pk"
-path.s3tc="res://.godot/imported/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png-027e2fa4c58ab39a4ccb282f20e9578f.s3tc.ctex"
+path.s3tc="res://.godot/imported/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png-fe4b56389164768b9dd4c72aa73eff04.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png"
-dest_files=["res://.godot/imported/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png-027e2fa4c58ab39a4ccb282f20e9578f.s3tc.ctex"]
+source_file="res://assets/Textures/buildings/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png"
+dest_files=["res://.godot/imported/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png-fe4b56389164768b9dd4c72aa73eff04.s3tc.ctex"]
 
 [params]
 

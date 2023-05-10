@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://uxwaj14hh64l"]
+[gd_scene load_steps=24 format=3 uid="uid://bxu8xg33ao153"]
 
 [ext_resource type="Script" path="res://assets/Scripts/first_level.gd" id="1_p01fy"]
 [ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="2_rcrgd"]
@@ -7,13 +7,26 @@
 [ext_resource type="PackedScene" uid="uid://bp0or0nhx8t68" path="res://assets/Characters/carinha.fbx" id="5_l03yo"]
 [ext_resource type="PackedScene" uid="uid://bxcm4sr6otmlm" path="res://assets/Characters/pe de pano.fbx" id="6_w1iun"]
 [ext_resource type="MeshLibrary" uid="uid://vvcfquix0uy7" path="res://scenes/first_level/first_level.meshlib" id="7_x436q"]
-[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="8_3shrd"]
 [ext_resource type="Texture2D" uid="uid://bf1r0v0hmqad0" path="res://assets/Textures/Tree/Tree_2.png" id="8_6yyhs"]
-[ext_resource type="BoxMesh" uid="uid://d308vu7v7li3v" path="res://assets/new_box_mesh.tres" id="9_cvp1u"]
+[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/buildings/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="9_7prm1"]
+[ext_resource type="BoxMesh" uid="uid://d308vu7v7li3v" path="res://scenes/first_level/box_that_falls.tres" id="10_vdu1e"]
 [ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="10_vswnm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
-size = Vector3(1.178, 3.563, 3.377)
+size = Vector3(1.796, 6.901, 2.676)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ne25"]
+transparency = 1
+albedo_texture = ExtResource("9_7prm1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_5bf8j"]
+material = SubResource("StandardMaterial3D_5ne25")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sofqh"]
+size = Vector3(8.99762, 9.72683, 5.44118)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_w0se1"]
+data = PackedVector3Array(-0.908, 0.5, 0.5, 0.908, 0.5, 0.5, -0.908, -0.5, 0.5, 0.908, 0.5, 0.5, 0.908, -0.5, 0.5, -0.908, -0.5, 0.5, 0.908, 0.5, -0.5, -0.908, 0.5, -0.5, 0.908, -0.5, -0.5, -0.908, 0.5, -0.5, -0.908, -0.5, -0.5, 0.908, -0.5, -0.5, 0.908, 0.5, 0.5, 0.908, 0.5, -0.5, 0.908, -0.5, 0.5, 0.908, 0.5, -0.5, 0.908, -0.5, -0.5, 0.908, -0.5, 0.5, -0.908, 0.5, -0.5, -0.908, 0.5, 0.5, -0.908, -0.5, -0.5, -0.908, 0.5, 0.5, -0.908, -0.5, 0.5, -0.908, -0.5, -0.5, 0.908, 0.5, 0.5, -0.908, 0.5, 0.5, 0.908, 0.5, -0.5, -0.908, 0.5, 0.5, -0.908, 0.5, -0.5, 0.908, 0.5, -0.5, -0.908, -0.5, 0.5, 0.908, -0.5, 0.5, -0.908, -0.5, -0.5, 0.908, -0.5, 0.5, 0.908, -0.5, -0.5, -0.908, -0.5, -0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbeql"]
 
@@ -45,18 +58,6 @@ sdfgi_read_sky_light = false
 sdfgi_energy = 0.36
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ne25"]
-transparency = 1
-albedo_texture = ExtResource("8_3shrd")
-
-[sub_resource type="QuadMesh" id="QuadMesh_5bf8j"]
-material = SubResource("StandardMaterial3D_5ne25")
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_sofqh"]
-size = Vector3(8.99762, 9.72683, 5.44118)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_pgygl"]
-
 [node name="first_level" type="Node3D"]
 script = ExtResource("1_p01fy")
 
@@ -79,7 +80,7 @@ speed = 20
 [node name="lamp" parent="CharacterBody3D" instance=ExtResource("5_l03yo")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(2.09443, 0, 0.121143, 0, 2.057, 0, -0.382095, 0, 0.66404, 0, 5.399, 0)
+transform = Transform3D(0.983763, 0, 0.179472, 0, 1, 0, -0.179472, 0, 0.983763, 0, 4.98454, 0)
 shape = SubResource("BoxShape3D_wdss6")
 
 [node name="lamp" parent="." instance=ExtResource("4_2f57l")]
@@ -87,6 +88,29 @@ transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, 
 
 [node name="pe de pano" parent="." instance=ExtResource("6_w1iun")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50033, 0)
+
+[node name="house" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="house"]
+transform = Transform3D(19.9999, -0.00691147, 0.00691146, 1.67489e-09, 14.1421, 14.1421, -0.00977428, -14.1421, 14.1421, 12.2335, 5, 6.82751)
+mesh = SubResource("QuadMesh_5bf8j")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="house"]
+transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 6.38335)
+shape = SubResource("BoxShape3D_sofqh")
+
+[node name="box_that_falls" type="RigidBody3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 13.4698, 15.2548, -22.7067)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="box_that_falls"]
+transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
+mesh = ExtResource("10_vdu1e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="box_that_falls"]
+transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
+shape = SubResource("ConcavePolygonShape3D_w0se1")
 
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0.0454533, -0.0139345, -0.016157)
@@ -156,29 +180,6 @@ shape = SubResource("CapsuleShape3D_gee53")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0eug")
-
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
-transform = Transform3D(19.9999, -0.00691147, 0.00691146, 1.67489e-09, 14.1421, 14.1421, -0.00977428, -14.1421, 14.1421, 12.2335, 5, 6.82751)
-mesh = SubResource("QuadMesh_5bf8j")
-skeleton = NodePath("")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 6.38335)
-shape = SubResource("BoxShape3D_sofqh")
-
-[node name="RigidBody3D2" type="RigidBody3D" parent="."]
-transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 13.4698, 15.2548, -22.7067)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D2"]
-transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.49605, 0, -6.18549)
-shape = SubResource("BoxShape3D_pgygl")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D2"]
-transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
-mesh = ExtResource("9_cvp1u")
 
 [node name="FadeScene" parent="." instance=ExtResource("10_vswnm")]
 visible = false

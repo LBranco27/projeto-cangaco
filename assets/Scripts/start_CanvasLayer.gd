@@ -2,9 +2,11 @@ extends CanvasLayer
 
 var fade_scene
 
+# var simultaneous_scene = preload("res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn").instantiate()
+
 func _ready():
 	fade_scene = get_node("../FadeScene")
-	fade_scene.change_to_transparent
+	fade_scene.change_to_transparent()
 
 func _on_button_start_pressed():
 	fade_scene.visible = true

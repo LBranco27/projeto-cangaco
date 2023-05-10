@@ -1,9 +1,0 @@
-[gd_resource type="PlaneMesh" load_steps=3 format=3 uid="uid://dfubdtsx7vh8i"]
-
-[ext_resource type="Texture2D" uid="uid://dis13fyruqfy4" path="res://assets/Sand4_S.jpg" id="1_r7ibk"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8isxw"]
-albedo_texture = ExtResource("1_r7ibk")
-
-[resource]
-material = SubResource("StandardMaterial3D_8isxw")

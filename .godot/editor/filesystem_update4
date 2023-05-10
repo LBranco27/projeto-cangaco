@@ -1,4 +1,9 @@
-res://scenes/first_level/first_level.tscn
 res://scenes/main_menu/main_menu.tscn
+res://scenes/first_level/first_level.meshlib
 res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn
+res://scenes/first_level/first_level.tscn
 res://scenes/utils/FadeScene.tscn
+res://assets/Scripts/Camera3D.gd
+res://assets/new_box_mesh.tres
+res://assets/Scripts/start_CanvasLayer.gd
+res://assets/Scripts/cutscene_before_first_level.gd

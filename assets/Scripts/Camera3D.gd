@@ -6,7 +6,7 @@ func _ready():
 	player = get_node("../CharacterBody3D")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 #	position = player.position
 	global_transform.origin[0] = player.global_transform.origin[0]
 	global_transform.origin[2] = player.global_transform.origin[2]+30

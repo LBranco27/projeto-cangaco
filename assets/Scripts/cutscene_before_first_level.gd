@@ -1,6 +1,6 @@
 extends Node2D
 
-var simultaneous_scene = preload("res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn").instantiate()
+# var simultaneous_scene = preload("res://scenes/cutscene_before_first_level/cutscene_before_first_level.tscn").instantiate()
 var timer
 var fade_scene
 
@@ -13,7 +13,7 @@ func _ready():
 #   get_tree().get_root().add_child(simultaneous_scene)
 #   get_node("/root/MainMenu").free()
 
-func _process(delta):
+func _process(_delta):
 	if(timer.time_left == 0):
 		fade_scene.transition_black()
 
