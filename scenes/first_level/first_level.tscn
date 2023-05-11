@@ -125,58 +125,58 @@ skeleton = NodePath("../..")
 transform = Transform3D(0.176863, 0, -0.17669, 0, 0.25, 0, 0.17669, 0, 0.176863, 0.00307649, -1.1205e-09, 0.00192119)
 shape = SubResource("BoxShape3D_o46y5")
 
+[node name="Tree 1" type="StaticBody3D" parent="Ground"]
+transform = Transform3D(0.007, 0, 0, 0, 0.014, 0, 0, 0, 0.007, 0.0128604, -0.0249033, -0.164075)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 2" type="StaticBody3D" parent="Ground"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.125941, -0.0130127, -0.137903)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 3" type="StaticBody3D" parent="Ground"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.102119, -0.0130127, -0.122773)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57218)
+shape = SubResource("CapsuleShape3D_gee53")
+
+[node name="Tree 4" type="StaticBody3D" parent="Ground"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.0438595, 0.0115521, -0.11575)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("8_6yyhs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
+shape = SubResource("CapsuleShape3D_gee53")
+
 [node name="GridMap" type="GridMap" parent="Ground"]
 mesh_library = ExtResource("7_x436q")
 cell_size = Vector3(0.05, 1, 0.05)
 cell_center_y = false
 data = {
-"cells": PackedInt32Array(65530, 65535, 1310720, 65530, 0, 1310720, 65531, 0, 1310720, 65531, 65535, 1310720, 65533, 65533, 1310720, 65535, 65532, 1310720, 65533, 2, 1310720)
+"cells": PackedInt32Array(65530, 65535, 1310720, 65530, 0, 1310720, 65531, 0, 1310720, 65531, 65535, 1310720, 65533, 65533, 1310720, 65535, 65532, 1310720, 65533, 2, 1310720, 65527, 65525, 1, 65527, 65526, 1, 65527, 65527, 1, 65527, 65528, 1, 65527, 65529, 1, 65528, 65529, 1, 65528, 65528, 1, 65528, 65526, 1, 65528, 65525, 1, 65528, 65524, 1, 65529, 65524, 1, 65529, 65525, 1, 65529, 65526, 1, 65529, 65529, 1, 65529, 65528, 1)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
-
-[node name="Tree 1" type="StaticBody3D" parent="Ground/GridMap"]
-transform = Transform3D(0.007, 0, 0, 0, 0.014, 0, 0, 0, 0.007, 0.0128604, -0.0249033, -0.164075)
-
-[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
-texture = ExtResource("8_6yyhs")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
-shape = SubResource("CapsuleShape3D_gee53")
-
-[node name="Tree 2" type="StaticBody3D" parent="Ground/GridMap"]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.125941, -0.0130127, -0.137903)
-
-[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
-texture = ExtResource("8_6yyhs")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
-shape = SubResource("CapsuleShape3D_gee53")
-
-[node name="Tree 3" type="StaticBody3D" parent="Ground/GridMap"]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0.102119, -0.0130127, -0.122773)
-
-[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
-texture = ExtResource("8_6yyhs")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57218)
-shape = SubResource("CapsuleShape3D_gee53")
-
-[node name="Tree 4" type="StaticBody3D" parent="Ground/GridMap"]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.0438595, 0.0115521, -0.11575)
-
-[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/GridMap/Tree 4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
-texture = ExtResource("8_6yyhs")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/GridMap/Tree 4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89532, 4.90005, -4.57219)
-shape = SubResource("CapsuleShape3D_gee53")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_r0eug")
