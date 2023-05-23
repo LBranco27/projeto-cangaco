@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://eyr1o3hheb4j"]
+
+[ext_resource type="Texture2D" uid="uid://upkcl8gulh82" path="res://assets/Textures/terrain/tiles/tile024.png" id="1_ht0nx"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_ilidl"]
+
+[node name="mesh_novo" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D"]
+axis = 1
+texture_filter = 0
+texture = ExtResource("1_ht0nx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_ilidl")

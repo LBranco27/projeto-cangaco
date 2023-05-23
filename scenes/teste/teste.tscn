@@ -1,10 +1,71 @@
-[gd_scene load_steps=2 format=3 uid="uid://p4fw1437xag7"]
+[gd_scene load_steps=16 format=3 uid="uid://p4fw1437xag7"]
 
 [ext_resource type="Texture2D" uid="uid://upkcl8gulh82" path="res://assets/Textures/terrain/tiles/tile024.png" id="1_kygcr"]
+[ext_resource type="Texture2D" uid="uid://dlqny4thdi3fc" path="res://assets/Textures/Cactus/Cactus_1_1.png" id="2_ert6v"]
+[ext_resource type="Texture2D" uid="uid://bwj5mr3ub7urt" path="res://assets/Textures/terrain/tiles/tile021.png" id="2_of5sj"]
+[ext_resource type="Texture2D" uid="uid://clav4f4g1uuip" path="res://assets/Textures/terrain/tiles/tile022.png" id="3_iphg6"]
+[ext_resource type="Texture2D" uid="uid://bf1r0v0hmqad0" path="res://assets/Textures/Tree/Tree_2.png" id="5_6l2n1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o7aff"]
+albedo_texture = ExtResource("1_kygcr")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_chivp"]
+material = SubResource("StandardMaterial3D_o7aff")
+size = Vector2(0.05, 0.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xtj2g"]
+albedo_texture = ExtResource("2_of5sj")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_na1eg"]
+material = SubResource("StandardMaterial3D_xtj2g")
+size = Vector2(0.05, 0.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oqqf2"]
+albedo_texture = ExtResource("3_iphg6")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ji8ur"]
+material = SubResource("StandardMaterial3D_oqqf2")
+size = Vector2(0.05, 0.05)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w8bik"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("5_6l2n1")
+
+[sub_resource type="QuadMesh" id="QuadMesh_rf677"]
+material = SubResource("StandardMaterial3D_w8bik")
+size = Vector2(0.2, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shpse"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("2_ert6v")
+
+[sub_resource type="QuadMesh" id="QuadMesh_2nawl"]
+material = SubResource("StandardMaterial3D_shpse")
+size = Vector2(0.05, 0.05)
 
 [node name="teste" type="Node3D"]
 
-[node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.73261e-05, 0.00135788, -0.000502765)
-texture_filter = 0
-texture = ExtResource("1_kygcr")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0678165, 0, 0)
+mesh = SubResource("PlaneMesh_chivp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0461414, -2.38419e-07, 0)
+mesh = SubResource("PlaneMesh_na1eg")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0106954, 0, 0)
+mesh = SubResource("PlaneMesh_ji8ur")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 6.18172e-08, -6.18172e-08, 0, 0.707107, 0.707107, 8.74228e-08, 0.707107, -0.707107, 0.113561, 0, 0)
+mesh = SubResource("QuadMesh_rf677")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.165099, 0, 0)
+mesh = SubResource("QuadMesh_2nawl")

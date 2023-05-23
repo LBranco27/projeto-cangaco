@@ -1,4 +1,4 @@
-res://scenes/teste/first_level.tscn
 res://assets/Scripts/Camera3D.gd
+res://scenes/teste/mesh_novo.tscn
+res://scenes/teste/novo.meshlib
 res://scenes/teste/first_level.meshlib
-res://scenes/teste/teste.tscn
