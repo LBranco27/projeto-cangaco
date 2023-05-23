@@ -1,7 +1,9 @@
+TileMap
+Sprite3D
+MeshInstance3D
 StaticBody3D
 CollisionShape3D
 CollisionPolygon3D
-Sprite3D
 Node3D
 GridMap
 Node
@@ -11,7 +13,6 @@ CanvasLayer
 Timer
 Label
 RichTextLabel
-MeshInstance3D
 RigidBody3D
 Node2D
 AnimatedSprite2D

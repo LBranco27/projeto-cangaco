@@ -1,0 +1,163 @@
+[gd_scene load_steps=27 format=3 uid="uid://vq30b7r2ugxq"]
+
+[ext_resource type="Script" path="res://assets/Scripts/first_level.gd" id="1_0jme5"]
+[ext_resource type="Script" path="res://assets/Scripts/Camera3D.gd" id="2_f61dm"]
+[ext_resource type="Script" path="res://assets/Scripts/Player.gd" id="3_0mnfp"]
+[ext_resource type="PackedScene" uid="uid://bp0or0nhx8t68" path="res://assets/Characters/carinha.fbx" id="4_21h7k"]
+[ext_resource type="PackedScene" path="res://scenes/objects/2_lamp.tscn" id="5_kxqi7"]
+[ext_resource type="PackedScene" uid="uid://bxcm4sr6otmlm" path="res://assets/Characters/pe de pano.fbx" id="6_fnjbl"]
+[ext_resource type="Texture2D" uid="uid://dv5duy8oe7pk" path="res://assets/Textures/buildings/png-clipart-building-sprite-isometric-projection-role-playing-game-fantasy-city-game-3d-computer-graphics-removebg-preview.png" id="7_wnb0j"]
+[ext_resource type="BoxMesh" uid="uid://d308vu7v7li3v" path="res://scenes/first_level/box_that_falls.tres" id="8_vn6ui"]
+[ext_resource type="Texture2D" uid="uid://bf1r0v0hmqad0" path="res://assets/Textures/Tree/Tree_2.png" id="9_88cag"]
+[ext_resource type="MeshLibrary" uid="uid://c5n8so7mv0w74" path="res://scenes/teste/first_level.meshlib" id="10_5o1l1"]
+[ext_resource type="PackedScene" uid="uid://ba81hcv04dygg" path="res://scenes/utils/FadeScene.tscn" id="11_oaubb"]
+[ext_resource type="Texture2D" uid="uid://cv0p0vk6ortqj" path="res://scenes/teste/tilesheet_complete.png" id="11_uo4tf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wdss6"]
+size = Vector3(1.796, 6.901, 2.676)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ne25"]
+transparency = 1
+albedo_texture = ExtResource("7_wnb0j")
+
+[sub_resource type="QuadMesh" id="QuadMesh_5bf8j"]
+material = SubResource("StandardMaterial3D_5ne25")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sofqh"]
+size = Vector3(8.99762, 9.72683, 5.44118)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_w0se1"]
+data = PackedVector3Array(-0.908, 0.5, 0.5, 0.908, 0.5, 0.5, -0.908, -0.5, 0.5, 0.908, 0.5, 0.5, 0.908, -0.5, 0.5, -0.908, -0.5, 0.5, 0.908, 0.5, -0.5, -0.908, 0.5, -0.5, 0.908, -0.5, -0.5, -0.908, 0.5, -0.5, -0.908, -0.5, -0.5, 0.908, -0.5, -0.5, 0.908, 0.5, 0.5, 0.908, 0.5, -0.5, 0.908, -0.5, 0.5, 0.908, 0.5, -0.5, 0.908, -0.5, -0.5, 0.908, -0.5, 0.5, -0.908, 0.5, -0.5, -0.908, 0.5, 0.5, -0.908, -0.5, -0.5, -0.908, 0.5, 0.5, -0.908, -0.5, 0.5, -0.908, -0.5, -0.5, 0.908, 0.5, 0.5, -0.908, 0.5, 0.5, 0.908, 0.5, -0.5, -0.908, 0.5, 0.5, -0.908, 0.5, -0.5, 0.908, 0.5, -0.5, -0.908, -0.5, 0.5, 0.908, -0.5, 0.5, -0.908, -0.5, -0.5, 0.908, -0.5, 0.5, 0.908, -0.5, -0.5, -0.908, -0.5, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbeql"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r3unc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o46y5"]
+size = Vector3(1.96372, 0.00504406, 1.94377)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p8xba"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_njc07"]
+texture = ExtResource("11_uo4tf")
+5:14/size_in_atlas = Vector2i(2, 2)
+5:14/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_2cokk"]
+sources/0 = SubResource("TileSetAtlasSource_njc07")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_1e2o0"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+sky_cover_modulate = Color(0.403922, 0.309804, 0.188235, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_lc1p5"]
+sky_material = SubResource("ProceduralSkyMaterial_1e2o0")
+
+[sub_resource type="Environment" id="Environment_r0eug"]
+background_mode = 2
+sky = SubResource("Sky_lc1p5")
+tonemap_mode = 2
+ssao_enabled = true
+ssao_intensity = 4.96
+ssil_enabled = true
+sdfgi_read_sky_light = false
+sdfgi_energy = 0.36
+glow_enabled = true
+
+[node name="first_level" type="Node3D"]
+script = ExtResource("1_0jme5")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.993228, 0.0518415, -0.103978, 3.53156e-09, 0.894934, 0.446198, 0.116185, -0.443176, 0.888873, 0.140867, -0.0139346, -0.0360665)
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 30.5792, 28.6525)
+projection = 1
+fov = 1.0
+size = 50.0
+script = ExtResource("2_f61dm")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0609, 3.16332, 0)
+script = ExtResource("3_0mnfp")
+speed = 20
+
+[node name="lamp" parent="CharacterBody3D" instance=ExtResource("4_21h7k")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(0.983763, 0, 0.179472, 0, 1, 0, -0.179472, 0, 0.983763, 0, 4.98454, 0)
+shape = SubResource("BoxShape3D_wdss6")
+
+[node name="lamp" parent="." instance=ExtResource("5_kxqi7")]
+transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, 18.3747, 0.0994402, 24.887)
+
+[node name="pe de pano" parent="." instance=ExtResource("6_fnjbl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50033, 21.0124)
+
+[node name="house" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="house"]
+transform = Transform3D(19.9999, -0.00691147, 0.00691146, 1.67489e-09, 14.1421, 14.1421, -0.00977428, -14.1421, 14.1421, 12.2335, 5, 6.82751)
+mesh = SubResource("QuadMesh_5bf8j")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="house"]
+transform = Transform3D(1.99923, 0, 0.0558414, 0, 2, 0, -0.0558414, 0, 1.99923, 12.3697, 5.34033, 6.38335)
+shape = SubResource("BoxShape3D_sofqh")
+
+[node name="box_that_falls" type="RigidBody3D" parent="."]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 13.4698, 15.2548, -22.7067)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="box_that_falls"]
+transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
+mesh = ExtResource("8_vn6ui")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="box_that_falls"]
+transform = Transform3D(2.82981, 0, -2.82704, 0, 4, 0, 2.82704, 0, 2.82981, -3.45465, 0.0545578, -6.19826)
+shape = SubResource("ConcavePolygonShape3D_w0se1")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(200, 0, 0, 0, 200, 0, 0, 0, 200, 0.0454533, -0.0139345, -0.016157)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+transform = Transform3D(0.176863, 0, -0.17669, 0, 0.25, 0, 0.17669, 0, 0.176863, 0.000954137, -1.1205e-09, -0.000199095)
+material_override = SubResource("StandardMaterial3D_jbeql")
+mesh = SubResource("PlaneMesh_r3unc")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(0.176863, 0, -0.17669, 0, 0.25, 0, 0.17669, 0, 0.176863, 0.00307649, -1.1205e-09, 0.00192119)
+shape = SubResource("BoxShape3D_o46y5")
+
+[node name="Tree 1" type="StaticBody3D" parent="Ground"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -0.03, -0.0202192, -0.041)
+
+[node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 1"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 2.47265, 4.98231, -4.57559)
+texture = ExtResource("9_88cag")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 1"]
+transform = Transform3D(0.847924, 0, 0, 0, 5.46101, 0, 0, 0, 1.69561, 1.89532, 4.90005, -4.06644)
+shape = SubResource("BoxShape3D_p8xba")
+
+[node name="GridMap" type="GridMap" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.024, 0)
+mesh_library = ExtResource("10_5o1l1")
+cell_size = Vector3(0.05, 0.05, 0.05)
+data = {
+"cells": PackedInt32Array(65535, 65532, 1310720, 65527, 65525, 1, 65527, 65526, 1, 65527, 65527, 1, 65527, 65528, 1, 65527, 65529, 1, 65528, 65529, 1, 65528, 65528, 1, 65528, 65526, 1, 65528, 65525, 1, 65528, 65524, 1, 65529, 65524, 1, 65529, 65525, 1, 65529, 65526, 1, 65529, 65529, 1, 65529, 65528, 1, -65520, 65498, 1, 1, 65534, 2, 1, 65535, 2, 0, 65535, 2, 2, 0, 2, 1, 0, 2, 65526, 65532, 2, 65527, 65532, 2, 65528, 65532, 2, 65528, 65533, 2, 65529, 65533, 2, 65530, 65533, 2, 65525, 65531, 2, 65524, 65531, 2, 65526, 65531, 2, 65531, 65533, 2, 65530, 65534, 2, 65485, 65225, 2, 65485, 65222, 2, 65517, 65394, 2, 65527, 65446, 2, 65532, 65471, 2, 0, 65496, 2, 2, 65503, 2, 3, 65512, 2, 4, 65515, 2, 5, 65518, 2, 5, 65520, 2, 5, 65522, 2, 6, 65523, 2, 6, 65525, 2, 6, 65526, 2, 6, 65527, 2, 65533, 2, 1)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="TileMap" type="TileMap" parent="Ground"]
+tile_set = SubResource("TileSet_2cokk")
+format = 2
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_r0eug")
+
+[node name="FadeScene" parent="." instance=ExtResource("11_oaubb")]
+visible = false

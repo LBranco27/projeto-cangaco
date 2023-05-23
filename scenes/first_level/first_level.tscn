@@ -73,7 +73,7 @@ size = 50.0
 script = ExtResource("2_rcrgd")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0609, 0.0358759, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.0609, 3.16332, 0)
 script = ExtResource("3_cnc6k")
 speed = 20
 
@@ -84,10 +84,10 @@ transform = Transform3D(0.983763, 0, 0.179472, 0, 1, 0, -0.179472, 0, 0.983763, 
 shape = SubResource("BoxShape3D_wdss6")
 
 [node name="lamp" parent="." instance=ExtResource("4_2f57l")]
-transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, -18.6652, 0.0358759, -11.7726)
+transform = Transform3D(0.707452, 0, -0.706761, 0, 1, 0, 0.706761, 0, 0.707452, -6.29087, 0.0358759, -11.7726)
 
 [node name="pe de pano" parent="." instance=ExtResource("6_w1iun")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50033, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.50033, 1.12206)
 
 [node name="house" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.518358, 0)
@@ -126,10 +126,10 @@ transform = Transform3D(0.176863, 0, -0.17669, 0, 0.25, 0, 0.17669, 0, 0.176863,
 shape = SubResource("BoxShape3D_o46y5")
 
 [node name="Tree 1" type="StaticBody3D" parent="Ground"]
-transform = Transform3D(0.007, 0, 0, 0, 0.014, 0, 0, 0, 0.007, 0.0128604, -0.0249033, -0.164075)
+transform = Transform3D(0.0101308, 0, 0, 0, 0.014, 0, 0, 0, 0.007, 0.0313671, -0.0256748, -0.12826)
 
 [node name="Sprite Tree 1" type="Sprite3D" parent="Ground/Tree 1"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.47265, 4.98231, -4.57559)
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 2.47265, 4.98231, -4.57559)
 texture = ExtResource("8_6yyhs")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Tree 1"]
